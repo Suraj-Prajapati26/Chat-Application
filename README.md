@@ -1,51 +1,60 @@
-# Chat-application-usin-php-websocket
-This a chat application created using Rachete websocket and php. In this application we can chat in a group or in a private one to one.
+# Chat Application using PHP Websocket
 
-**How to run the Rachete Websocket**
-To run the websocket= In command prompt with in a root directory, enter command "php bin/server.php" => it will start the websocket server, 
-if you didnt do that then you cannot send the message in the chat application.
+This is a chat application created using Ratchet WebSocket and PHP. In this application, users can chat in a group or have private one-on-one conversations.
 
-**Intitalise SMTP**
-During regestration, a verification code will be send to your email address => To do such things we need to build smtp server through which you can send
-the mails to the users.
-For this, in registration.php =>
-            $mail->isSMTP();
-            $mail->Host = 'smtp.gmail.com';
-            $mail->SMTPAuth = true;
-            $mail->Username = '';
-            $mail->Password = '';
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-            $mail->Port = 465;
-        
-            $mail->setFrom('@gmail.com', 'Quirrel CHAT');
-            $mail->addAddress($user_object->getUserEmail());
-            $mail->isHTML(true);
-            $mail->Subject = 'Registration Verification for Chat Application Demo';
-            $mail->Body = '
-  Enter the details in the above objects, I used the gmail smtp server that's why the $mail->Host is  'smtp.gmail.com'. You can enter whatever you want to add.
-  in "Username" Enter the username of your smtp server and the password = 16 character obtained from app password created.
-  
-  you can go with the other port of smtp server rather than 465.
-  $mail->setFrom('@gmail.com', 'Quirrel CHAT'); here in this statement you have to enter the email address and the name which will be visible on the mail.
-  
-  **Screenshots of my Project**
+## How to Run the Ratchet WebSocket
 
-  *Login webpage*
-  ![Screenshot Description](screenshots/Screenshot%202023-05-29%20150519.png)
+To run the WebSocket, follow these steps:
 
-  *Registeration webpage*
-  ![Screenshot Description](screenshots/Screenshot%202023-05-29%20150556.png)
+1. Open the command prompt within the root directory of the project.
+2. Enter the command `php bin/server.php`. This will start the WebSocket server.
+   Note: Make sure you have the necessary dependencies and configurations in place.
 
-  *Chat room webpage*
-  ![Screenshot Description](screenshots/Screenshot%202023-05-29%20150629.png)
+## Initializing SMTP
 
-*Edit profile webpage*
-  ![Screenshot Description](screenshots/Screenshot%202023-05-29%20150734.png)
+During registration, a verification code will be sent to the user's email address. To enable this functionality, you need to set up an SMTP server for sending emails. Follow the steps below:
 
-*Private chat(light theme)*
-  ![Screenshot Description](screenshots/Screenshot%202023-05-29%20150709.png)
+1. Open the `registration.php` file.
+2. Update the following settings within the file:
 
-*Private chat(dark theme)*
-  ![Screenshot Description](screenshots/Screenshot%202023-05-29%20150824.png)
+$mail->isSMTP();
+$mail->Host = 'smtp.gmail.com';
+$mail->SMTPAuth = true;
+$mail->Username = '';
+$mail->Password = '';
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+$mail->Port = 465;
 
-  
+$mail->setFrom('@gmail.com', 'Quirrel CHAT');
+$mail->addAddress($user_object->getUserEmail());
+$mail->isHTML(true);
+$mail->Subject = 'Registration Verification for Chat Application Demo';
+$mail->Body = '
+Enter the necessary details in the above objects. If you are using Gmail SMTP, keep the $mail->Host as 'smtp.gmail.com'.
+Replace the "Username" and "Password" with your SMTP server credentials.
+You can use a different port for the SMTP server if needed.
+
+In the $mail->setFrom('@gmail.com', 'Quirrel CHAT') statement, replace the email address and name with your desired values.
+
+
+## Screenshots of the Project
+
+Here are some screenshots of the chat application:
+
+**Login Webpage**
+![Screenshot](screenshots/Screenshot%202023-05-29%20150519.png)
+
+**Registration Webpage**
+![Screenshot](screenshots/Screenshot%202023-05-29%20150556.png)
+
+**Chat Room Webpage**
+![Screenshot](screenshots/Screenshot%202023-05-29%20150629.png)
+
+**Edit Profile Webpage**
+![Screenshot](screenshots/Screenshot%202023-05-29%20150734.png)
+
+**Private Chat (Light Theme)**
+![Screenshot](screenshots/Screenshot%202023-05-29%20150709.png)
+
+**Private Chat (Dark Theme)**
+![Screenshot](screenshots/Screenshot%202023-05-29%20150824.png)
