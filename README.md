@@ -28,4 +28,24 @@ For this, in registration.php =>
   you can go with the other port of smtp server rather than 465.
   $mail->setFrom('@gmail.com', 'Quirrel CHAT'); here in this statement you have to enter the email address and the name which will be visible on the mail.
   
+  **Screenshots of my Project**
+
+  *Login webpage*
+  ![Screenshot Description](screenshots/Screenshot%202023-05-29%20150519.png)
+
+  *Registeration webpage*
+  ![Screenshot Description](screenshots/Screenshot%202023-05-29%20150556.png)
+
+  *Chat room webpage*
+  ![Screenshot Description](screenshots/Screenshot%202023-05-29%20150629.png)
+
+*Edit profile webpage*
+  ![Screenshot Description](screenshots/Screenshot%202023-05-29%20150734.png)
+
+*Private chat(light theme)*
+  ![Screenshot Description](screenshots/Screenshot%202023-05-29%20150709.png)
+
+*Private chat(dark theme)*
+  ![Screenshot Description](screenshots/Screenshot%202023-05-29%20150824.png)
+
   
