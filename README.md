@@ -29,7 +29,8 @@ $mail->setFrom('@gmail.com', 'Quirrel CHAT');
 $mail->addAddress($user_object->getUserEmail());
 $mail->isHTML(true);
 $mail->Subject = 'Registration Verification for Chat Application Demo';
-$mail->Body = '
+$mail->Body = '';
+
 Enter the necessary details in the above objects. If you are using Gmail SMTP, keep the $mail->Host as 'smtp.gmail.com'.
 Replace the "Username" and "Password" with your SMTP server credentials.
 You can use a different port for the SMTP server if needed.
